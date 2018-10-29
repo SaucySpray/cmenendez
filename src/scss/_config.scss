@@ -2,8 +2,12 @@ $white: #FFF;
 $cream: #F9F9F9;
 $dark-grey: #1A1A1A;
 $light-grey: #EAEAEA;
+@font-face {
+  font-family: 'Futura';
+  src: url('../medias/fonts/Futura.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: 'Futura';
-    src: url('../medias/fonts/Futura.ttf') format('truetype');
+  font-family: 'Roboto';
+  src: url('../medias/fonts/Roboto.ttf') format('truetype');
 }

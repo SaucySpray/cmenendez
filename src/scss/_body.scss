@@ -5,9 +5,9 @@ html, body {
     height: 100%;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 300;
     background-color: $cream;
-    color: $dark-grey;
+    overflow-y: hidden;
 }
 
 a {
