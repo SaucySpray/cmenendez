@@ -1,0 +1,21 @@
+.main {
+  display: block;
+  width: 100%; // ma hauteur
+  height: 150%; // ma largeur
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1A1A1A;
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-150vh); // mon angle plus mon point de départ
+  overflow-y: auto;
+  z-index: 0; //gérer pour avoir le menu en overlay
+}
+
+.main .main-el {
+  display: block;
+  padding: 5px;
+  background: #cab;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
