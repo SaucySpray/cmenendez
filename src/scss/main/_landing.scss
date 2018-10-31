@@ -1,0 +1,23 @@
+.slide-1 {
+  background-color: #45CCFF;
+  position: relative;
+}
+
+.slide-1 .slide-1-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.slide-1 .landing-title .title-part {
+  width: 380px;
+  height: 80px;
+  position: absolute;
+}
+
+.slide-1 .landing-title .part-2 {}

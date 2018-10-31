@@ -7,12 +7,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
+  position: relative;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 300;
-  background-color: #F9F9F9;
-  overflow-y: hidden; }
+  background-color: #F9F9F9; }
 
 a {
   color: inherit;
@@ -167,24 +168,59 @@ a {
   height: 30px;
   font-size: 16px; }
 
-.main {
-  display: block;
-  width: 100%;
-  height: 150%;
+#container {
+  width: 100vh;
+  height: 100vw;
   position: absolute;
-  top: 0;
-  left: 0;
-  background: #1A1A1A;
-  transform-origin: right top;
-  transform: rotate(-90deg) translateY(-150vh);
-  overflow-y: auto;
-  z-index: 0; }
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
-.main .main-el {
-  display: block;
-  padding: 5px;
-  background: #cab;
-  transform: rotate(90deg);
-  transform-origin: right top; }
+#container .slide {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+::-moz-scrollbar {
+  display: none; }
+
+#container-inner {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space: nowrap;
+  font-size: 0; }
+
+.slide-2 {
+  background-color: #49E83E; }
+
+.slide-3 {
+  background-color: #EDDE05; }
+
+.slide-4 {
+  background-color: #E84B30; }
+
+.slide-1 {
+  background-color: #45CCFF;
+  position: relative; }
+
+.slide-1 .slide-1-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10; }
+
+.slide-1 .landing-title .title-part {
+  width: 380px;
+  height: 80px;
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */
